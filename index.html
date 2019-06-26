@@ -1,0 +1,154 @@
+<!-- things to remember/check for while developing this game:
+1. mobile first development
+2. load time (minification)
+3. fluid interactivity
+4. user experience
+5. user engagement
+6. color/style psychology
+7. developer brand (style, color, etc) 
+8. edge cases (what-ifs) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!----------------------------------- meta tags ------------------------------------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!---------------------------------- stylesheets ------------------------------------>
+    <!-- css reset -->
+    <!-- <link rel = "stylesheet" href = "assets/css/reset.css">  -->
+
+    <!-- bootstrap css CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- developer appearance css -->
+    <link rel = "stylesheet" href = "assets/css/style.css">
+
+    <!-----------------------------------page title ------------------------------------------>
+    <title>Elizabethan Hangman</title>
+
+</head>
+
+    <!--------------------------------------BODY ---------------------------------------------->
+<body>
+    <!----------------------------------HTML ELEMENTS------------------------------------------>
+    
+    <!--------------------------------------NAVBAR--------------------------------------------->
+    <!-- the choice between easy and difficult will be madee by clicking on the appropriate 
+    link in the navbar
+    the forumm link will be disabled for now (until further notice)-->
+    <div id = "nav">
+
+        <ul class="navbar">
+            <li class="title"><h1> Elizabethan Hangman</h1></li>
+            <div id= nav-tabs>
+            <button class="nav-item">
+              <a class="nav-link disabled" href="#"><h3>About The Bard</h3></a>
+            </button>
+            <button class="nav-item">
+              <a class="nav-link disabled" href="#"><h3>Shakespeare's Works</h3></a>
+            </button>
+            <button class="nav-item">
+              <a class="nav-link disabled" href="#"><h3>Forum</h3></a>
+            </button>
+              <button class="nav-item">
+              <a class="nav-link disabled" href="#"><h3>More Shakespeare</h3></a>
+            </button>
+        </div>
+          </ul>
+    </div>
+    <!---------------------------------------/NAVBAR---------------------------------------------->
+    <!--------------------------------------PAGE CONTAINER---------------------------------------->
+    <!-- this is the entirety, less nav and footer, of what is going into the body of the game 
+    it is a container in which there is a jumbotron, the hangman canvas and a sub-container called 
+    "gamePlay" this is where the gameplay buttons will be generated, and is therefore the primary 
+    area where users are expected to interact-->
+    <div id="pageContainer">   
+
+    <!----------------------------------------JUMBOTRON-------------------------------------------->
+    <!-- the game is introduced using a bootstrap jumbotron -->
+    <!-- this has to contain a few elements:
+                1. the welcome message(s)
+                2. the game start and sound options buttons -->
+    <div id="jumbotron jumbotron-fluid">
+        <div class="container">
+
+              <p class="lead"> Good morrow! How dost thou? Perchance, thou would'st 
+                play a game. Or, art thou a lubberwort? By my troth, be warned, 
+                an thou art a lubberwort, hither, I shall dispatch with thee anon. 
+                God save thee. </p>
+              <p class="lead"> Hi! How are you? Maybe, you would like to play a game.
+                Or, are you not that smart? I swear, though, be careful, because if your not
+                that smart, I will HANG you. mmmmmwwwwahahahahahaha!!!!. Good luck. </p>
+            <div class= "playButtons"> 
+                <button class = "play"> PLAY</button>
+                <button class = "reset"> RESET</button>
+                <button class = "sound"> SOUND</button>
+                <button class = "quit"> QUIT(exit game)</button>
+                <span id="wins">
+                </span>
+                </br>
+                <span id="losses">
+                </span> 
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------/JUMBOTRON-------------------------------------------->
+
+    <!----------------------------------------HANGMAN CANVAS---------------------------------------->
+
+     <span id = canvasDiv>
+        <canvas id = "hangCanvas" width = "600px" height= "500px"></canvas>
+    
+    <script src= "assets/js/canvas.js"></script>
+     </span>
+    <!----------------------------------------/HANGMAN CANVAS---------------------------------------->
+    
+    <!------------------------------------------GAMEPLAY--------------------------------------------->
+    <div id="gamePlay">  
+    
+    </div>
+
+    <!-- save the gamePlayMode in case I want to develop the 
+            quotes (challenge) mode later -->
+    <!-- <div id= "gamePlayMode">
+    </div> -->
+
+    <div id="gamePlayAlpha">
+    </div>
+
+    <script src= "assets/js/game-play.js"></script>
+
+
+
+     <!-----------------------------------------/GAMEPLAY--------------------------------------------->
+
+    </div>
+<!--------------------------------------------/PAGE CONTAINER----------------------------------------->
+
+<!------------------------------------------------FOOTER---------------------------------------------->
+    <div id= "footer">
+                <h2 id= "quote">"Cowards die many times before their deaths; the valiant never taste of death but once."
+                        -William Shakespeare (Julius Caesar: Act 2, Scene 2)</h2>
+    </div>
+<!-----------------------------------------------/FOOTER---------------------------------------------->
+
+
+
+<!-- Optional JavaScript for bootstrap -->
+<!-- jQuery first -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+crossorigin="anonymous"></script>
+<!-- then Popper.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+crossorigin="anonymous"></script>
+<!-- then Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+crossorigin="anonymous"></script>
+
+</body>
+</html>

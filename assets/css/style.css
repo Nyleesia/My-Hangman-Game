@@ -1,0 +1,135 @@
+body {
+    background: url(https://ctl.s6img.com/society6/img/Bfq2nahuY-_5_xXA2QVsau02ADc/w_700/prints/~artwork/s6-0065/a/27009143_11826187/~~/william-shakespeare-watercolor-portrait-rly-prints.jpg?wait=0&attempt=0) no-repeat;
+    background-size: cover;
+
+} 
+
+#nav {
+    max-width: auto;
+    margin-left: auto;
+    margin-left: auto;
+    border-bottom: darkgray 2px solid;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 55%;
+    background-color: black; 
+    color: white;
+    padding: 10px;
+}
+
+h2 {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 20px;
+}
+    
+h3 { 
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#nav-tabs{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: space-between;
+    max-width: 30%;
+    list-style-type: none;
+}
+
+.nav-item {
+    background-color: black; 
+    color: white;
+    padding: 0px;
+    margin: 5px;
+}
+
+#pageContainer{
+    max-width: 960px;
+    margin: auto;
+}
+
+#jumbotron {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p {
+    text-align: justify;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    font-size: 16px;
+    text-align: justify;
+    color: black;
+    line-height: 1.8em;
+}
+
+#canvasDiv {
+    margin-top: 10px;
+    border: 3px solid black;
+    max-width: 960px;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+.playButtons {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin: 15px;
+}
+
+.playButtons button {
+    margin: 15px;
+    font-style: italic;
+    background-color: black;
+    color: white;
+}
+
+#gamePlay {
+    text-align:center;
+    font-size: 20px;
+    margin:20px;
+}
+
+#gamePlayAlpha {
+    text-align:center;
+    font-weight: bolder;
+}
+
+#gamePlayAlpha button {
+    text-align:center;
+    font-weight: bolder;
+    margin: 2px;
+    color: white;
+    background-color: black;
+}
+
+#footer{
+    max-width: auto;
+    margin-left: auto;
+    margin-left: auto;
+    border-top: darkgray 2px solid;
+    margin-top: 15px;
+    text-align: center;
+}
+
