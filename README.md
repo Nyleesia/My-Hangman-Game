@@ -21,8 +21,6 @@ used the "server").
 </br>
 </br>
 In closing:
-</br>
-
 Yoshi and I wish you long life and prosperity :)
 </br>
 
