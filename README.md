@@ -12,7 +12,7 @@ guess game (essentially hangman).
 My code breaks/doesn't work as I would like, when I ask it to "quit(exit game)" while on a page hosted by github
 (this is expected).
 As soon as we get into the UI side of things, I expect that I will be able to better undertstand what I need to
-do to make my code work as I want it to, under most circumstances (specifically when my own machine is not being used the "server". 
+do to make my code work as I want it to, under most circumstances (specifically when my own machine is not being used the "server"). 
 </br>
 </br>
 </br>
